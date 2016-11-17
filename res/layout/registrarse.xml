@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Registro: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_Registro"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        android:ems="10"
+        android:layout_marginTop="29dp"
+        android:id="@+id/edit_Nombre"
+        android:layout_below="@+id/text_Registro"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/edit_Usurio"
+        android:layout_below="@+id/edit_Nombre"
+        android:layout_alignStart="@+id/edit_Nombre" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/edit_Pass"
+        android:layout_below="@+id/edit_Usurio"
+        android:layout_alignStart="@+id/edit_Usurio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:id="@+id/edit_Pass2"
+        android:layout_below="@+id/edit_Pass"
+        android:layout_alignStart="@+id/edit_Pass" />
+
+
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_Pass2"
+        android:layout_alignEnd="@+id/edit_Pass2"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="49dp"
+        android:id="@+id/button"
+        android:onClick="registro"/>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Inicio de sesión"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:ems="10"
+        android:layout_marginTop="79dp"
+        android:id="@+id/edit_Usuario"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:ems="10"
+        android:layout_below="@+id/edit_Usuario"
+        android:layout_alignStart="@+id/edit_Usuario"
+        android:layout_marginTop="79dp"
+        android:id="@+id/edit_Pass" />
+
+
+    <Button
+        android:text="Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="51dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/edit_Pass"
+        android:onClick="iniciarSesion"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>
