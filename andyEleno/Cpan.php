@@ -18,11 +18,11 @@
  
  //Getting values
  $name = $_REQUEST['name'];
- $usu = $_REQUEST['usu'];
- $pas = $_REQUEST['pas'];
+ $precio = $_REQUEST['precio'];
+ $cantidad = $_REQUEST['cantidad'];
  
  //Creating an sql query
- $sql = "INSERT INTO usuarios (nombre,password,usuario) VALUES ('$name','$pas','$usu')";
+ $sql = "INSERT INTO producto (nombre,precio,cantidad) VALUES ('$name','$precio','$cantidad')";
  
  //Importing our db connection script
  require_once('cnx.php');
